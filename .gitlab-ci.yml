@@ -7,7 +7,7 @@ build-gcc:
 
   before_script:
   - apk update
-  - apk add musl-dev git make gcc automake autoconf libtool gzip zip
+  - apk add musl-dev git make gcc automake autoconf libtool gzip zip xz
   - apk add libogg-dev opus-dev opusfile-dev flac-dev
 
   script:
