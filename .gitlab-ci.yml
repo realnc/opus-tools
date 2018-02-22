@@ -8,9 +8,9 @@ build-gcc:
   before_script:
   - apk update
   - apk add musl-dev git make gcc automake autoconf libtool gzip zip
-  - apk add openssl-dev libogg-dev opus-dev opusfile-dev flac-dev
+  - apk add libogg-dev opus-dev opusfile-dev flac-dev
 
-  script: 
+  script:
   # build libopusenc
   - git clone "https://git.xiph.org/libopusenc.git"
   - cd libopusenc
