@@ -7,8 +7,8 @@ build-gcc:
 
   before_script:
   - apk update
-  - apk add musl-dev git make gcc automake autoconf libtool gzip zip xz
-  - apk add libogg-dev opus-dev opusfile-dev flac-dev
+  - apk add musl-dev git make gcc automake autoconf libtool file gzip zip xz
+  - apk add linux-headers libogg-dev opus-dev opusfile-dev flac-dev
 
   script:
   # build libopusenc
