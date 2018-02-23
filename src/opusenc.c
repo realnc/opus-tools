@@ -561,7 +561,7 @@ int main(int argc, char **argv)
           char *spos,*tpos;
           size_t len=strlen(optarg);
           spos=strchr(optarg,'=');
-          if(len<3||spos==NULL||(spos-optarg)<1||(spos-optarg)>=len){
+          if(len<3||spos==NULL||(spos-optarg)<1||(size_t)(spos-optarg)>=len){
             fatal("Invalid set-ctl-int: %s\n"
               "Syntax is --set-ctl-int intX=intY\n"
               "       or --set-ctl-int intS:intX=intY\n", optarg);
